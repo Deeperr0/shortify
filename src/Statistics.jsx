@@ -1,3 +1,4 @@
+import ShortenedUrls from "./ShortenedUrls";
 import StatisticCard from "./StatisticCard";
 
 const statistics = [
@@ -42,6 +43,7 @@ const statistics = [
 export default function Statistics() {
 	return (
 		<div className="statistics">
+			<ShortenedUrls />
 			<h2 className="statistics-title">Advanced Statistics</h2>
 			<p className="statistics-text">
 				Track how your links are performing across the web with our advanced
@@ -51,8 +53,8 @@ export default function Statistics() {
 				<StatisticCard statisticsData={statistics[0]} key={0} />
 				<StatisticCard statisticsData={statistics[1]} key={1} />
 				<StatisticCard statisticsData={statistics[2]} key={2} />
-				<div className="statistics-line" />
 			</div>
+			<div className="statistics-line" />
 		</div>
 	);
 }

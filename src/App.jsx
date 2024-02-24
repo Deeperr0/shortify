@@ -5,6 +5,7 @@ import Shortner from "./Shortner.jsx";
 import Statistics from "./Statistics.jsx";
 import Footer from "./Footer.jsx";
 import BoostLinks from "./BoostLinks.jsx";
+import ShortenedUrls from "./ShortenedUrls.jsx";
 function App() {
 	return (
 		<>

@@ -58,10 +58,18 @@ export default function footer() {
 				</ul>
 			</div>
 			<div className="footer-socials">
-				<FontAwesomeIcon icon={faSquareFacebook} />
-				<FontAwesomeIcon icon={faTwitter} />
-				<FontAwesomeIcon icon={faPinterest} />
-				<FontAwesomeIcon icon={faInstagram} />
+				<a href="www.facebook.com/">
+					<FontAwesomeIcon icon={faSquareFacebook} />
+				</a>
+				<a href="www.twitter.com/">
+					<FontAwesomeIcon icon={faTwitter} />
+				</a>
+				<a href="www.pinterest.com/">
+					<FontAwesomeIcon icon={faPinterest} />
+				</a>
+				<a href="www.instagram.com/">
+					<FontAwesomeIcon icon={faInstagram} />
+				</a>
 			</div>
 		</footer>
 	);
