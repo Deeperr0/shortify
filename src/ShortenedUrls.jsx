@@ -5,9 +5,12 @@ export default function ShortenedUrls() {
 	for (let i = localStorage.length - 1; i >= 0; i--) {
 		shortenedLinks.push(localStorage.getItem(localStorage.key(i)));
 	}
+	const filteredShortenedLinks = shortenedLinks.filter(
+		(link) => link != "undefined"
+	);
 	return (
 		<div className="shortened-urls">
-			{shortenedLinks.map((link, index) => (
+			{filteredShortenedLinks.map((link, index) => (
 				<ShortenedUrl key={index} url={link} index={index}></ShortenedUrl>
 			))}
 		</div>

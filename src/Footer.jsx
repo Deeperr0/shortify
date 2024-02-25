@@ -46,6 +46,7 @@ export default function footer() {
 				<ul className="company">
 					<li>Company</li>
 					<div className="links">
+						`
 						<ul>
 							<li>
 								<a href="#">About</a>

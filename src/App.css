@@ -258,7 +258,8 @@
 .boost-links-button:hover,
 .shortner-button:hover,
 .hero-get-started-button:hover,
-.navbar-signup-button:hover {
+.navbar-signup-button:hover,
+.copy-button:hover {
 	background-color: var(--button-background-color-hover);
 }
 .boost-links-content {
@@ -345,4 +346,5 @@ button {
 	font-weight: 500;
 	width: 10vw;
 	height: 3.4vw;
+	transition: background-color 0.3s ease-in-out;
 }
