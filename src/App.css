@@ -1,4 +1,10 @@
-@import url(variables.css);
+:root {
+	--primary-text-color: #34333c;
+	--secondary-text-color: #b4b4bb;
+	--button-background-color: #2fced0;
+	--button-background-color-hover: #1d9597;
+	--button-text-color: #fffefe;
+}
 
 * {
 	box-sizing: border-box;
@@ -101,7 +107,7 @@
 	margin-top: -2.1vw;
 }
 .hero-text {
-	margin-top: 0.651vw;
+	margin-top: 2vw;
 	color: var(--secondary-text-color);
 	font-size: 1.563vw;
 	font-weight: 500;
@@ -114,7 +120,7 @@
 	border: none;
 	color: var(--button-text-color);
 	font-weight: 500;
-	margin-top: 1.563vw;
+	margin-top: 3vw;
 	width: 14.3vw;
 	height: 4.232vw;
 }
@@ -328,8 +334,8 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 86px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	height: 5.599vw;
+	border: 0.065vw solid rgba(0, 0, 0, 0.1);
 	border-radius: 1.1vw;
 	padding: 1vw;
 	background-color: var(--button-text-color);
