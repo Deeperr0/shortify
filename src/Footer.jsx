@@ -14,15 +14,17 @@ export default function footer() {
 				<ul className="features">
 					<li>Features</li>
 					<div className="links">
-						<li>
-							<a href="#">Link Shortening</a>
-						</li>
-						<li>
-							<a href="#">Branded Links</a>
-						</li>
-						<li>
-							<a href="#">Analytics</a>
-						</li>
+						<ul>
+							<li>
+								<a href="#">Link Shortening</a>
+							</li>
+							<li>
+								<a href="#">Branded Links</a>
+							</li>
+							<li>
+								<a href="#">Analytics</a>
+							</li>
+						</ul>
 					</div>
 				</ul>
 				<ul className="resources">
@@ -58,16 +60,16 @@ export default function footer() {
 				</ul>
 			</div>
 			<div className="footer-socials">
-				<a href="www.facebook.com/">
+				<a href="www.facebook.com/" aria-label="Facebook">
 					<FontAwesomeIcon icon={faSquareFacebook} />
 				</a>
-				<a href="www.twitter.com/">
+				<a href="www.twitter.com/" aria-label="Twitter">
 					<FontAwesomeIcon icon={faTwitter} />
 				</a>
-				<a href="www.pinterest.com/">
+				<a href="www.pinterest.com/" aria-label="Pinterest">
 					<FontAwesomeIcon icon={faPinterest} />
 				</a>
-				<a href="www.instagram.com/">
+				<a href="www.instagram.com/" aria-label="Instagram">
 					<FontAwesomeIcon icon={faInstagram} />
 				</a>
 			</div>

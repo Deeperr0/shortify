@@ -15,8 +15,8 @@ export default function Hero() {
 					<img
 						src={heroImg}
 						alt="illustration-working"
-						height="31.38vw"
-						width="47.721vw"
+						height="482"
+						width="733"
 					/>
 				</div>
 			</div>
