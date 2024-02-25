@@ -30,32 +30,36 @@ export default function footer() {
 				<ul className="resources">
 					<li>Resources</li>
 					<div className="links">
-						<li>
-							<a href="#">Blog</a>
-						</li>
-						<li>
-							<a href="#">Developers</a>
-						</li>
-						<li>
-							<a href="#">Support</a>
-						</li>
+						<ul>
+							<li>
+								<a href="#">Blog</a>
+							</li>
+							<li>
+								<a href="#">Developers</a>
+							</li>
+							<li>
+								<a href="#">Support</a>
+							</li>
+						</ul>
 					</div>
 				</ul>
 				<ul className="company">
 					<li>Company</li>
 					<div className="links">
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Our Team</a>
-						</li>
-						<li>
-							<a href="#">Careers</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
+						<ul>
+							<li>
+								<a href="#">About</a>
+							</li>
+							<li>
+								<a href="#">Our Team</a>
+							</li>
+							<li>
+								<a href="#">Careers</a>
+							</li>
+							<li>
+								<a href="#">Contact</a>
+							</li>
+						</ul>
 					</div>
 				</ul>
 			</div>

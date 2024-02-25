@@ -307,6 +307,9 @@
 .links {
 	margin: 1.432vw 0;
 }
+.links ul {
+	padding: 0;
+}
 .links li {
 	margin: 0.651vw 0;
 }
