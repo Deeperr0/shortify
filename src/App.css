@@ -5,10 +5,7 @@
 	font-family: "Poppins";
 	margin: 0;
 }
-.body {
-	width: 100vw;
-	overflow: hidden;
-}
+
 .navbar,
 .hero,
 .statistics,

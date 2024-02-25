@@ -12,7 +12,12 @@ export default function Hero() {
 					<button className="hero-get-started-button">Get Started</button>
 				</div>
 				<div className="hero-right">
-					<img src={heroImg} alt="illustration-working" />
+					<img
+						src={heroImg}
+						alt="illustration-working"
+						height="31.38vw"
+						width="47.721vw"
+					/>
 				</div>
 			</div>
 		</>
