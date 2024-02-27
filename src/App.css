@@ -135,6 +135,7 @@
 	background-color: white;
 	height: 100%;
 	width: 40%;
+	z-index: 3;
 }
 .navbar-close-menu {
 	transform: scale(1.5);
