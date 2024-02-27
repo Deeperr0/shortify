@@ -133,21 +133,21 @@
 	top: 4rem;
 	left: 60%;
 	background-color: white;
-	height: 100%;
-	width: 40%;
+	height: 100vh;
 	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 .navbar-close-menu {
-	transform: scale(1.5);
-	text-align: right;
-	margin-left: 80%;
+	transform: scale(1.5) translateX(-10vw);
 	cursor: pointer;
 }
 .navbar-side-links {
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
-	gap: 0.5rem;
+	gap: 2rem;
 	margin-bottom: 1rem;
 }
 .navbar-side-links a {
@@ -160,6 +160,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+	transform: translateX(-4vw);
 }
 .hero {
 	margin-top: 84.5px;
