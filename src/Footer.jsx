@@ -6,9 +6,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function footer() {
+export default function footer(props) {
+	const windowWidth = props.windowWidth;
 	return (
-		<footer className="footer">
+		<footer className={windowWidth >= 480 ? "footer" : "footer-mobile"}>
 			<div className="footer-logo">Shortify</div>
 			<div className="footer-links">
 				<ul className="features">

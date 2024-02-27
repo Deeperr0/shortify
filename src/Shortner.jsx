@@ -1,6 +1,8 @@
 import axios from "axios";
 
-export default function Shortner() {
+export default function Shortner(props) {
+	const windowWidth = props.windowWidth;
+
 	async function shortenLink(event) {
 		event.preventDefault();
 
@@ -13,7 +15,7 @@ export default function Shortner() {
 	}
 
 	return (
-		<div className="shortner">
+		<div className={windowWidth >= 480 ? "shortner" : "shortner-mobile"}>
 			<form>
 				<input
 					placeholder="Shorten a link here..."

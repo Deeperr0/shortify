@@ -5,17 +5,30 @@ import Shortner from "./Shortner.jsx";
 import Statistics from "./Statistics.jsx";
 import Footer from "./Footer.jsx";
 import BoostLinks from "./BoostLinks.jsx";
-import ShortenedUrls from "./ShortenedUrls.jsx";
+import { useEffect } from "react";
+import { useState } from "react";
 function App() {
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+	useEffect(() => {
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth);
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 	return (
 		<>
 			<div>
-				<Navbar />
-				<Hero />
-				<Shortner />
-				<Statistics />
-				<BoostLinks />
-				<Footer />
+				<Navbar windowWidth={windowWidth} />
+				<Hero windowWidth={windowWidth} />
+				<Shortner windowWidth={windowWidth} />
+				<Statistics windowWidth={windowWidth} />
+				<BoostLinks windowWidth={windowWidth} />
+				<Footer windowWidth={windowWidth} />
 			</div>
 		</>
 	);
