@@ -187,7 +187,6 @@
 }
 .hero-title {
 	font-size: 76px;
-	width: 100%;
 	color: var(--primary-text-color);
 	line-height: 80px;
 	margin-top: -32px;
