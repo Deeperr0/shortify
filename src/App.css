@@ -21,7 +21,6 @@
 }
 .navbar {
 	margin-top: 54px;
-	width: 100%;
 	display: grid;
 	align-items: center;
 	grid-template-columns: 12% 63% 30%;
@@ -33,7 +32,6 @@
 }
 .navbar-mobile {
 	margin-top: 54px;
-	width: 100%;
 	display: grid;
 	align-items: center;
 	grid-template-columns: 55% 10px;
