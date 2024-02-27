@@ -292,6 +292,7 @@
 	align-items: center;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	overflow: hidden;
 }
 .statistics-title,
 .statistics-mobile > .statistics-title {
