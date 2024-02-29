@@ -167,6 +167,7 @@
 }
 .hero-left {
 	width: 50%;
+	flex-shrink: 0;
 }
 .hero-mobile {
 	overflow: hidden;
@@ -176,20 +177,20 @@
 	margin-top: 5rem;
 }
 .hero-right {
-	margin-left: 12.5%;
-	overflow: hidden;
-	height: 482px;
-	width: 733px;
+	max-width: 733px;
+	min-width: 50%;
 	flex-shrink: 0;
 }
 .hero-image {
 	display: block;
-	transform: translateX(6vw);
+	width: 100% !important;
+	transform: translateX(12vw);
 }
+
 .hero-title {
-	font-size: 4.5vw;
+	font-size: 3.7rem;
 	color: var(--primary-text-color);
-	line-height: 4.7vw;
+	line-height: 3.9rem;
 	margin-top: -32px;
 }
 .hero-mobile > .hero-title {
@@ -201,7 +202,7 @@
 .hero-text {
 	margin-top: 31px;
 	color: var(--secondary-text-color);
-	font-size: 2vw;
+	font-size: 1.5rem;
 	font-weight: 500;
 }
 .hero-mobile > .hero-text {
