@@ -3,7 +3,7 @@ import smallHeroImg from "./assets/small-illustration.svg";
 export default function Hero(props) {
 	const windowWidth = props.windowWidth;
 	let hero = null;
-	if (windowWidth >= 480) {
+	if (windowWidth >= 811) {
 		hero = (
 			<div className="hero">
 				<div className="hero-left">

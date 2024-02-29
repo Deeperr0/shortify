@@ -15,7 +15,7 @@ export default function Shortner(props) {
 	}
 
 	return (
-		<div className={windowWidth >= 480 ? "shortner" : "shortner-mobile"}>
+		<div className={windowWidth >= 811 ? "shortner" : "shortner-mobile"}>
 			<form>
 				<input
 					placeholder="Shorten a link here..."

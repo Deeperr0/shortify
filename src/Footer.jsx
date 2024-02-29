@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function footer(props) {
 	const windowWidth = props.windowWidth;
 	return (
-		<footer className={windowWidth >= 480 ? "footer" : "footer-mobile"}>
+		<footer className={windowWidth >= 811 ? "footer" : "footer-mobile"}>
 			<div className="footer-logo">Shortify</div>
 			<div className="footer-links">
 				<ul className="features">

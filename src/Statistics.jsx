@@ -43,7 +43,7 @@ const statistics = [
 export default function Statistics(props) {
 	const windowWidth = props.windowWidth;
 	return (
-		<div className={windowWidth >= 480 ? "statistics" : "statistics-mobile"}>
+		<div className={windowWidth >= 811 ? "statistics" : "statistics-mobile"}>
 			<ShortenedUrls />
 			<h2 className="statistics-title">Advanced Statistics</h2>
 			<p className="statistics-text">

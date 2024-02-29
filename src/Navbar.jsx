@@ -1,6 +1,5 @@
 import { faArrowLeft, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
 import { useState } from "react";
 export default function Navbar(props) {
 	const windowWidth = props.windowWidth;
@@ -11,7 +10,7 @@ export default function Navbar(props) {
 	};
 
 	let navbar = null;
-	if (windowWidth < 480) {
+	if (windowWidth < 811) {
 		navbar = (
 			<>
 				<nav className="navbar-mobile">
