@@ -8,11 +8,22 @@ export default function ShortenedUrls() {
 	const filteredShortenedLinks = shortenedLinks.filter(
 		(link) => link != "undefined"
 	);
+	function clear() {
+		localStorage.clear();
+		location.reload();
+	}
 	return (
-		<div className="shortened-urls">
-			{filteredShortenedLinks.map((link, index) => (
-				<ShortenedUrl key={index} url={link} index={index}></ShortenedUrl>
-			))}
+		<div>
+			{localStorage.length > 0 && (
+				<div className="clear-urls">
+					<button onClick={clear}>Clear</button>
+				</div>
+			)}
+			<div className="shortened-urls">
+				{filteredShortenedLinks.map((link, index) => (
+					<ShortenedUrl key={index} url={link} index={index}></ShortenedUrl>
+				))}
+			</div>
 		</div>
 	);
 }

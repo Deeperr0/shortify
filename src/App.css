@@ -514,10 +514,7 @@ button {
 	cursor: pointer;
 }
 .shortened-urls {
-	width: 78%;
-	max-width: 1200px;
-	margin: 0 10% 0 12%;
-	padding: 1.5rem 0.5rem;
+	width: 100%;
 }
 .shortened-url {
 	display: flex;
@@ -550,4 +547,17 @@ button {
 	width: 156px;
 	height: 54px;
 	transition: background-color 0.3s ease-in-out;
+}
+.clear-urls {
+	display: flex;
+	justify-content: right;
+	margin-bottom: 2rem;
+}
+.clear-urls button {
+	background-color: red;
+	color: white;
+	border: 0;
+	padding: 10px 20px;
+	border-radius: 8px;
+	font-size: 20px;
 }
