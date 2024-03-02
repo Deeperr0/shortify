@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useState } from "react";
 
 export default function Shortner(props) {
 	const windowWidth = props.windowWidth;
@@ -11,7 +12,7 @@ export default function Shortner(props) {
 			`https://is.gd/create.php?format=json&url=${encodeURIComponent(url)}`
 		);
 		localStorage.setItem(url, response.data.shorturl);
-		location.reload();
+		window.dispatchEvent(new Event("storageChange"));
 	}
 
 	return (
@@ -24,7 +25,11 @@ export default function Shortner(props) {
 					id="url"
 					className="shortner-url"
 				/>
-				<button className="shortner-button" type="submit" onClick={shortenLink}>
+				<button
+					className="shortner-button"
+					type="submit"
+					onClick={shortenLink}
+					id="shortner-button">
 					Shorten It!
 				</button>
 			</form>
