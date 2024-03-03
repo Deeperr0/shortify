@@ -7,15 +7,12 @@ export default function ShortenedUrls(props) {
 	);
 	useEffect(() => {
 		const handleStorageChange = () => {
-			// Update the state with the new localStorage length
 			setLocalStorageLength(localStorage.length);
 			console.log(localStorage.length);
 		};
 
-		// Listen for the storage event
 		window.addEventListener("storageChange", handleStorageChange);
 
-		// Clean up the event listener when the component unmounts
 		return () => {
 			window.removeEventListener("storageChange", handleStorageChange);
 		};
