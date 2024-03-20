@@ -15,12 +15,10 @@ function App() {
 		};
 
 		window.addEventListener("resize", handleResize);
-		window.addEventListener("orientationchange", handleResize);
 		return () => {
 			window.removeEventListener("resize", handleResize);
-			window.removeEventListener("orientationchange", handleResize);
 		};
-	}, []);
+	}, [window.innerHeight]);
 	return (
 		<>
 			<div>
