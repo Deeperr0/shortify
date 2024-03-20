@@ -1,4 +1,4 @@
-import { faArrowLeft, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 export default function Navbar(props) {
@@ -24,7 +24,7 @@ export default function Navbar(props) {
 				{isSideMenuOpen && (
 					<div className="navbar-side-menu">
 						<FontAwesomeIcon
-							icon={faArrowLeft}
+							icon={faX}
 							className="navbar-close-menu"
 							onClick={toggleSideMenu}
 						/>
