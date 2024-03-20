@@ -165,6 +165,7 @@
 	margin-top: 84.5px;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 }
 .hero-left {
 	width: 50%;
@@ -181,11 +182,11 @@
 	max-width: 733px;
 	min-width: 50%;
 	flex-shrink: 0;
+	transform: translateX(12vw);
 }
 .hero-image {
 	display: block;
 	width: 100% !important;
-	transform: translateX(12vw);
 }
 
 .hero-title {
