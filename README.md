@@ -9,4 +9,5 @@ Desktop Preview
 
 Mobile Preview
 
-![Mobile preview](https://github.com/user-attachments/assets/f69eb066-f600-4c20-87b3-04470c492b45)
+![Mobile preview](https://github.com/user-attachments/assets/3f68db9d-e434-4bf3-9ee0-f5c1e24de9dd)
+
